@@ -2,44 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Mother Teresa: Men's Group Presentation</title>
+    <title>Lessons from St. Mother Teresa - Men's Group</title>
     <style>
-        :root { --gold: #d4af37; --bg: #050505; }
-        body { margin: 0; background: var(--bg); color: white; font-family: 'Georgia', serif; overflow: hidden; }
-        .slide-deck { display: flex; width: 1300%; height: 100vh; transition: transform 0.5s ease; }
-        .slide { width: 100vw; height: 100vh; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px; box-sizing: border-box; text-align: center; }
-        h1 { font-size: 3.5rem; color: var(--gold); }
-        h2 { font-size: 2.8rem; border-bottom: 3px solid var(--gold); margin-bottom: 20px; }
-        .btn-vid { background: var(--gold); border: none; padding: 20px 40px; font-weight: bold; cursor: pointer; border-radius: 50px; font-size: 1.4rem; margin-top: 20px; }
-        .nav { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; }
-        button.nav-btn { padding: 10px 20px; background: #222; color: white; border: 1px solid #444; cursor: pointer; }
+        :root { --gold: #d4af37; --blue: #003366; --bg: #050505; --text: #f4f4f4; }
+        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Georgia', serif; background: var(--bg); color: var(--text); overflow: hidden; }
+        .slide-deck { display: flex; width: 1300%; height: 100vh; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .slide { width: 100vw; height: 100vh; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px; box-sizing: border-box; text-align: center; background: linear-gradient(135deg, #001220 0%, #000 100%); }
+        h1 { font-size: 3.8rem; color: var(--gold); margin-bottom: 10px; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+        h2 { font-size: 2.8rem; border-bottom: 3px solid var(--gold); margin-bottom: 25px; padding-bottom: 10px; display: inline-block; }
+        p, li { font-size: 1.7rem; max-width: 950px; text-align: left; line-height: 1.5; margin-bottom: 15px; }
+        .quote { font-style: italic; border-left: 5px solid var(--gold); padding: 25px; background: rgba(255,255,255,0.05); margin: 30px 0; font-size: 1.8rem; line-height: 1.4; border-radius: 0 10px 10px 0; }
+        .btn-vid { background: var(--gold); color: black; border: none; padding: 22px 45px; font-weight: bold; cursor: pointer; border-radius: 50px; font-size: 1.4rem; transition: 0.3s; box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4); margin-top: 20px; }
+        .btn-vid:hover { transform: translateY(-3px) scale(1.03); background: white; }
+        .nav { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; gap: 40px; z-index: 1000; }
+        .nav button { padding: 12px 25px; background: #222; color: white; border: 1px solid #444; cursor: pointer; border-radius: 5px; font-size: 1.1rem; transition: 0.2s; }
+        .nav button:hover { background: var(--gold); color: black; }
+        .slide-num { position: fixed; top: 20px; right: 30px; font-size: 1.2rem; opacity: 0.4; }
     </style>
 </head>
 <body>
 
+<div class="slide-num" id="sn">1 / 13</div>
+
 <div class="slide-deck" id="deck">
-    <div class="slide"><h1>Lessons from St. Mother Teresa</h1><p>Faith, Love, and Simplicity</p></div>
-    <div class="slide"><h2>Who Was Mother Teresa?</h2><p>Founded Missionaries of Charity (1950). Nobel Peace Prize 1979.</p></div>
-    
+    <div class="slide">
+        <h1>Lessons from St. Mother Teresa</h1>
+        <p style="text-align: center;">Faith, Love, and Simplicity<br><br><strong>Biju & Men's Group</strong></p>
+    </div>
+
+    <div class="slide">
+        <h2>Who Was Mother Teresa?</h2>
+        <ul>
+            <li>Albanian nun who founded the Missionaries of Charity in 1950.</li>
+            <li>Dedicated her life to the "poorest of the poor" in Calcutta.</li>
+            <li>Nobel Peace Prize winner (1979) and Canonized Saint (2016).</li>
+            <li>Driven by the cry of Jesus on the Cross: <strong>"I thirst."</strong></li>
+        </ul>
+    </div>
+
     <div class="slide">
         <h2>Spiritual Poverty in the West</h2>
-        <p>Loneliness is the most difficult hunger to satiate.</p>
+        <div class="quote">"The poverty in the West is a poverty of loneliness and spirituality. There's a hunger for love, as there is a hunger for God."</div>
         <button class="btn-vid" onclick="openClip('podbbvAYVTg', 72, 92)">▶ Play: Loneliness (1:12 - 1:32)</button>
     </div>
 
+    <div class="slide">
+        <h2>The Cure: Love and Presence</h2>
+        <p>Material goods cannot fill a soul created for God.</p>
+        <ul>
+            <li>Presence is more valuable than "providing."</li>
+            <li>As men, do we give our families our *stuff* or our *selves*?</li>
+        </ul>
     </div>
 
+    <div class="slide">
+        <h2>Simplicity: Path to Joy</h2>
+        <div class="quote">"Live simply so others may simply live."</div>
+        <p>Her life was a protest against the "clutter" of the world that distracts us from Christ.</p>
+    </div>
+
+    <div class="slide">
+        <h2>Sharing vs. Giving</h2>
+        <p>True love involves sacrifice. It isn't giving from abundance; it's giving from need.</p>
+        <button class="btn-vid" onclick="openClip('UEQ8O4XpIgE', 450, 480)">▶ Play: Give Until it Hurts (7:30)</button>
+    </div>
+
+    <div class="slide">
+        <h2>The Dark Night: Heroic Faith</h2>
+        <p>She served for 50 years without "feeling" God's presence.</p>
+        <ul>
+            <li>Faith is an act of the **will**, not an emotion.</li>
+            <li>Staying the course when it feels empty is true spiritual grit.</li>
+        </ul>
+        <button class="btn-vid" onclick="openClip('-p9ZxtwenDU', 60, 100)">▶ Play: Spiritual Darkness (1:00)</button>
+    </div>
+
+    <div class="slide">
+        <h2>Leadership from Conviction</h2>
+        <p>She was often called "difficult" because she was unshakeable.</p>
+        <ul>
+            <li>She trusted God's voice over human "practicality."</li>
+            <li>Real leadership requires a "Holy Stubbornness."</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>Entrepreneurial Faith</h2>
+        <p>She stepped out of the convent with no money, no plan, only Providence.</p>
+        <p><strong>Lesson:</strong> When God calls, the "business plan" follows the action.</p>
+    </div>
+
+    <div class="slide">
+        <h2>Pure Love, No Force</h2>
+        <p>She served Hindus and Muslims with the same dignity as Christians.</p>
+        <div class="quote">"I would not do this without Christ... but we support everyone's faith."</div>
+    </div>
+
+    <div class="slide">
+        <h2>Embracing Suffering</h2>
+        <p>She believed suffering unites us to the Cross of Christ.</p>
+        <p>She didn't just provide medical care; she provided a **dignified death** to those dying in the streets.</p>
+    </div>
+
+    <div class="slide">
+        <h2>Defending the Vulnerable</h2>
+        <p>She stood before world leaders to defend the unborn.</p>
+        <button class="btn-vid" onclick="openClip('UEQ8O4XpIgE', 1200, 1245)">▶ Play: Nobel Speech (20:00)</button>
+    </div>
+
+    <div class="slide">
+        <h2>Closing: Call to Action</h2>
+        <div class="quote">"Not all of us can do great things. But we can do small things with great love."</div>
+        <p><strong>Challenge:</strong> Simplify one thing this week. Reach out to one lonely person.</p>
+        <h3 style="color:var(--gold)">Prayer & Questions</h3>
+    </div>
+</div>
+
 <div class="nav">
-    <button class="nav-btn" onclick="change(-1)">PREVIOUS</button>
-    <button class="nav-btn" onclick="change(1)">NEXT</button>
+    <button onclick="change(-1)">PREVIOUS</button>
+    <button onclick="change(1)">NEXT</button>
 </div>
 
 <script>
     let current = 0;
+    const total = 13;
+    const deck = document.getElementById('deck');
+    const sn = document.getElementById('sn');
+
     function change(dir) {
-        current = Math.max(0, Math.min(12, current + dir));
-        document.getElementById('deck').style.transform = `translateX(-${current * 100}vw)`;
+        current = Math.max(0, Math.min(total - 1, current + dir));
+        deck.style.transform = `translateX(-${current * 100}vw)`;
+        sn.innerText = `${current + 1} / ${total}`;
     }
 
     function openClip(id, start, end) {
@@ -48,11 +143,11 @@
         const left = (window.innerWidth / 2) - (width / 2);
         const top = (window.innerHeight / 2) - (height / 2);
         
-        // IMPORTANT: origin=http://localhost:8080 is what fixes Error 153 on local servers
+        // origin logic for local/GitHub Pages
         const origin = window.location.origin;
         const url = `https://www.youtube.com/embed/${id}?start=${start}&end=${end}&autoplay=1&mute=0&rel=0&origin=${origin}`;
         
-        window.open(url, 'ytPlayer', `width=${width},height=${height},left=${left},top=${top}`);
+        window.open(url, 'ytPlayer', `width=${width},height=${height},left=${left},top=${top},menubar=no,status=no,toolbar=no`);
     }
 
     document.addEventListener('keydown', e => {
